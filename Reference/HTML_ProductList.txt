@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<style>
+
+.product_section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 0;
+}
+
+
+.product_section .product {
+    transition: 0.5s ease;
+    width: 25%;
+    margin-bottom: 30px;
+}
+
+.product_section .product .panel-body {
+    padding: 20px;
+    text-align: left;
+}
+
+.product_section .product .product_image {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.product_section .product .colour_section {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product_section .product .colour_section .color {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin: 4px;
+}
+	
+
+</style>
+
+<body>
+
+<div class='container'>
+<div class='product_section'>
+<div class="product">
+        <a href="https://colourpop.com/collections/lippie-pencil">
+          <div class="panel-body">
+            <div class="product_image">
+              <img style='height:300px' src="//s3.amazonaws.com/donovanbailey/products/api_featured_images/000/001/035/original/open-uri20180630-4-n6wb0y?1530390383" alt="Open uri20180630 4 n6wb0y?1530390383">
+            </div>
+            <div class="">
+              <h3>rejuva minerals</h3>
+              <h4>Multi Purpose Powder - Blush &amp; Eye</h4>
+                <p><span class="bold">Category: </span>powder</p>
+              <p>$0.00</p>
+              <p></p>
+            </div>
+              <div class="colour_section">
+                  <div class="color" style="background-color: #D7A7A3; height: 20px; margin: 0 3px 3px 3px">
+                  </div>
+                  <div class="color" style="background-color: #E1BFC0; height: 20px; margin: 0 3px 3px 3px">
+                  </div>
+                  <div class="color" style="background-color: #E6C3CB; height: 20px; margin: 0 3px 3px 3px">
+                  </div>
+              </div>
+          </div>	
+	</a>      
+</div>
+</div>
+</div>
+</body>
+</html>
