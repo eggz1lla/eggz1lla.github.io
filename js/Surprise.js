@@ -9,8 +9,8 @@ function HandleSurprise(){
             document.getElementById('SuccDiv').style.display = 'block'
             document.getElementById('SuccDiv').style.opacity = '100'
     }else{
-        document.getElementById('ErrorDiv').style.display = 'block'
-        document.getElementById('ErrorDiv').style.opacity = '100'
+        document.getElementById('ErrorDiv').style.display = 'block';
+        document.getElementById('ErrorDiv').style.opacity = '100';
     }
 
 }
