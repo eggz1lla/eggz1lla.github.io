@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="author" content="">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<title>Ｍｅｓｔｉｅｚａ 流じ隠</title>
+<!-- CSS -->
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<link href='https://fonts.googleapis.com/css?family=Great+Vibes' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Oswald:400,700,300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Roboto+Condensed:400,400italic,300italic,300,700,700italic' rel='stylesheet' type='text/css'>
+</head>
+<body style="background-image:url(img/SurpriseBack.jpg);background-attachment:fixed;background-size:cover;">
+
+<div id="loader-wrapper">
+<div id="loader"></div>
+<div class="loader-section section-left"></div>
+<div class="loader-section section-right"></div>
+</div>
+
+<div class="menu-outer">
+    <div class="menu-icon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <nav>
+        <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="Medical.html">Health & Care</a></li>
+           <li><a href="Beauty.html">Beauty</a></li>
+           <li><a href="Surprise.html">Surprise</a></li>
+       </ul>
+   </nav>
+</div>
+<a class="menu-close" onClick="return true">
+    <div class="menu-icon">
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+</a>
+
+<div class="fixedcallicon">
+	<i class="fa fa-phone"></i><span class="hide">Call Eggy for Motivation ♥</span>
+</div>
+<div class="container">
+<div class="logoarea">
+<div class="intro">
+		<h1><span class="smaller wow zoomIn" data-wow-duration="2s" data-wow-delay="0.5">Made with Love ♥</span>
+		<span class="big wow pulse" data-wow-duration="1s" data-wow-delay="0s">Maganda Mestisa</span><br/>
+		
+			</h1>
+		</div>
+		</div>
+		<div class="pagearea">
+		<h1 class="page-headline">&#10083; Surprise &#10083;</h1>
+		<i class="iconstartitle textmagenta fa fa-star"></i>
+        <div class="alert" id="ErrorDiv" style="display: none;">
+            <span class="closebtn">&times;</span>  
+            <strong>Wrong Password :(</strong> Hint - It Starts with "R" and ends with "g" It contains 3 words.
+          </div>
+        <div class="alert success" id="SuccDiv" style="display: none;">
+            <span class="closebtn">&times;</span>  
+            <strong>Woo!!</strong> You are Amazing Rei ♥ i hope you will feel better one day & im here with you and for you.
+          </div>
+		<div id="InputDiv" style="display: block;">
+                <input class='PasswordInput' type="password" id="pwd" name="pwd" minlength="8" placeholder="Enter Password to unlock The Surprise.."><br><br>
+                <input class='btn' type="submit" value="Unlock the Surprise" style="float:right;" onclick="HandleSurprise()">
+			</div>	
+            
+            <div id="SurpriseDiv" style="display: none;">
+                <audio controls>
+                    <!-- <source src="horse.ogg" type="audio/ogg"> -->
+                    <source src="143.mp3" type="audio/mpeg">
+                  Your browser does not support the audio element.
+                  </audio>
+            </div>
+            
+		</div>
+	
+</div>
+<div class="clearfix"></div>
+<footer class="footer">
+<div class="container">
+<div class="pull-left">&copy; Made by Eggy &#128526;</div>
+<div class="pull-right"> 
+	For Rei :D
+</div>
+<div class="clearfix"></div>
+</div>
+</footer>	
+<!-- Scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="js/nicescroll.js"></script>
+<script src="js/common.js"></script>
+<script src="js/Surprise.js"></script>
+
+<script>
+    var close = document.getElementsByClassName("closebtn");
+    var i;
+    
+    for (i = 0; i < close.length; i++) {
+      close[i].onclick = function(){
+        var div = this.parentElement;
+        div.style.opacity = "0";
+        setTimeout(function(){ div.style.display = "none"; }, 600);
+      }
+    }
+    </script>
+</body>
+</html>
